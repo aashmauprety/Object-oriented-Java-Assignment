@@ -25,16 +25,19 @@ public class CombinationSum {
     	int s = 0;
        for (int x: temp) s += x;
        if (s == target_sum) {
-    	    //ind = input.indexOf(temp);
-            //System.out.println("sum("+Arrays.toString(temp.toArray())+")="+target_sum);
-            //System.out.println(input.indexOf(temp));
-       		ArrayList<Integer> a = new ArrayList<Integer>();
+    	   
+       		ArrayList<Integer> indices = new ArrayList<Integer>();
+       		ArrayList<Integer> elements = new ArrayList<Integer>();
        		for (int x : temp) {
-       			a.add(placeholder.indexOf(x));
+       			indices.add(placeholder.indexOf(x));
+       			elements.add(x);
+       			
        		}
-       	
-       		System.out.println("Combination of index : ("+Arrays.toString(a.toArray())+")="+target_sum);
-       		System.out.println("input{"+Arrays.toString(temp.toArray())+"="+target_sum+"\n");
+       		//?System.out.println(placeholder);
+       	    //System.out.println(temp);
+       		System.out.println("Combination of index : "+Arrays.toString(indices.toArray())+" == "+target_sum + " for elements "
+       	    + Arrays.toString(elements.toArray()));
+       		//System.out.println("input{"+Arrays.toString(temp.toArray())+"="+target_sum+"\n");
        		
        }
             
