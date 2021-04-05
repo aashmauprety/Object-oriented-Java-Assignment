@@ -1,4 +1,4 @@
-package org.howard.edu.lsp.assignment4.implementation;
+package org.howard.edu.lsp.assignment6.integerset;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;	
@@ -139,9 +139,10 @@ public class IntegerSet {
 		 for (int i = 0; i< sb.size(); i++) {
 			 temp.add(sb.get(i));
 		 }
+		 this.set = temp.getSet();
+		 //System.out.println("Result of Union of "+ set.toString() + " and " + intSetb.toString()+ " " + "is :" +  temp.toString());
 		 
-		 System.out.println("Result of Union of "+ set.toString() + " and " + intSetb.toString()+ " " + "is :" +  temp.toString());
-		 }
+	 }
 		 
 	 
 	 /**
@@ -157,7 +158,8 @@ public class IntegerSet {
 				 temp.add( set.get(i) );
 			 }
 		 }
-		 System.out.println("Result of Intersection of "+ set.toString() + " and " + intSetb.toString()+ " " + "is: " +  temp.toString());
+		 //System.out.println("Result of Intersection of "+ set.toString() + " and " + intSetb.toString()+ " " + "is: " +  temp.toString());
+		 this.set = temp.getSet();
 	 } 
 
 	 /**
@@ -173,7 +175,8 @@ public class IntegerSet {
 				 temp.add( set.get(i) );
 			 }
 		 }
-		 System.out.println("Result of difference operation of "+ set.toString() + " and " + intSetb.toString()+ " " + "is: " +  temp.toString());
+		 //System.out.println("Result of difference operation of "+ set.toString() + " and " + intSetb.toString()+ " " + "is: " +  temp.toString());
+		 this.set = temp.getSet();
 	 }
 	 
 		/**
