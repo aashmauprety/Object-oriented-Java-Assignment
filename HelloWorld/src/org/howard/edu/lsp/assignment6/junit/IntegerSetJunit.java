@@ -1,5 +1,4 @@
 package org.howard.edu.lsp.assignment6.junit;
-
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
