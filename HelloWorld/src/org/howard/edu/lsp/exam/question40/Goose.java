@@ -1,5 +1,10 @@
 package org.howard.edu.lsp.exam.question40;
 
+/***
+ * 
+ * @author Aashma Uprety
+ *Class Goose use abstract class Animal and overrides its methods move() and speak()
+ */
 public class Goose extends Animal implements Flying {
 	@Override 
 	public String speak(){

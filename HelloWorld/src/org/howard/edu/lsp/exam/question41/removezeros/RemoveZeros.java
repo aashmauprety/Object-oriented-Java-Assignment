@@ -1,22 +1,13 @@
 package org.howard.edu.lsp.exam.question41.removezeros;
 import java.util.*;
 
-//public static void removeZeroes(ArrayList intList)
-//
-//{		
-//	for(int i = 0; i < intList.size(); i++)
-//	{	
-//		if(intList.get(i) == 0)
-//		{
-//			intList.remove(i);
-//			i--;
-//		}
-//	}
-//}
-//
-
 public class RemoveZeros{
 	
+	/***
+	 * 
+	 * @param list is the input arraylist from which all zeroes should be removed.
+	 * @return list after removing all zeroes from the original arraylist
+	 */
 	public static ArrayList<Integer> removeZeroes(ArrayList<Integer> list) {
 	//	int i = 0;
 	//	while (i<list.size()) {
